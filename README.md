@@ -74,12 +74,12 @@ Please ensure your scripts include:
 - Usage instructions
 - Comments in English
 
-## Support
+## 💬 Support
 ---
 
 > Maintained by [Hag-Zilla](https://github.com/Hag-Zilla)
 
-## License
+## 📝 License
 ---
 
 See [LICENSE](LICENSE) file for details.

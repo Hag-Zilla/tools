@@ -46,7 +46,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 echo ""
 echo "👤 Adding user $USER to docker group..."
-sudo usermod -aG docker $USER
+sudo usermod -aG docker "$USER"
 
 echo ""
 echo "✅ Testing Docker installation..."
