@@ -31,6 +31,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 echo ""
 echo "📝 Configuring Docker repository..."
+# shellcheck source=/dev/null
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
