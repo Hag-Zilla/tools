@@ -30,9 +30,18 @@ Automated script for installing Docker Engine on Ubuntu/Debian systems following
 - `docker-buildx-plugin`: Advanced image builder
 - `docker-compose-plugin`: Multi-container orchestration
 
-**How to use:**
+## 🚀 Getting Started
+---
 
-1. Download the script:
+### Requirements
+
+- Ubuntu or Debian-based Linux distribution
+- Sudo privileges
+- Internet connection
+
+### Installation
+
+1. Clone the repository:
    ```bash
    git clone git@github.com:Hag-Zilla/tools.git
    cd tools
@@ -50,12 +59,49 @@ Automated script for installing Docker Engine on Ubuntu/Debian systems following
 
 4. After installation, log out and log back in (or run `newgrp docker`) to use Docker without sudo.
 
-**Requirements:**
-- Ubuntu or Debian-based Linux distribution
-- Sudo privileges
-- Internet connection
+### Important Notes
 
-**Note:** The script will prompt for confirmation if Docker is already installed on your system.
+- The script will prompt for confirmation if Docker is already installed on your system
+- An internet connection is required to download Docker components
+
+## 🔧 Usage
+---
+
+The `docker_install.sh` script fully automates the Docker installation process:
+
+```bash
+./docker_install.sh
+```
+
+The script will perform the following operations:
+1. Check if Docker is already installed
+2. Update package repositories
+3. Install prerequisites and GPG key
+4. Configure the official Docker repository
+5. Install Docker CE and associated components
+6. Configure group permissions
+7. Test the installation
+
+## 🐛 Troubleshooting
+---
+
+### Permission Denied
+
+If you get a permission error, make sure the script is executable:
+```bash
+chmod +x docker_install.sh
+```
+
+### Docker is Already Installed
+
+The script detects existing installations and will prompt for confirmation before reinstalling.
+
+### Port or Resource Conflicts
+
+Check that no Docker service is currently running:
+```bash
+sudo systemctl status docker
+```
 
 ## 🤝 Contributing
 ---
