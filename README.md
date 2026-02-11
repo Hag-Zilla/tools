@@ -82,6 +82,16 @@ The script will perform the following operations:
 6. Configure group permissions
 7. Test the installation
 
+## 🗂️ Project Structure
+---
+
+```
+tools/
+├── docker_install.sh    # Docker installation script
+├── LICENSE              # Project license
+└── README.md            # This documentation
+```
+
 ## 🐛 Troubleshooting
 ---
 
